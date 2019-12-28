@@ -1,0 +1,15 @@
+<mat-toolbar>
+<form class="SearchBox">
+    <mat-form-field class="example-full-width">
+      <input matInput #message maxlength="256" placeholder="Search" name="filter" (input)="onSearchChange($event.target.value)" [(ngModel)]="searchTerm">
+    </mat-form-field>   
+  </form>
+  &nbsp;&nbsp;&nbsp;&nbsp; Pagination: &nbsp;&nbsp;&nbsp;
+  <mat-form-field name="selectPagination">
+    <mat-select [(value)]="selected" (selectionChange)="selectAndRoute()">
+      <mat-option  value="five">5</mat-option>
+      <mat-option  value="ten">10</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-toolbar>
+<router-outlet></router-outlet>

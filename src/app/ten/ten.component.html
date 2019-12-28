@@ -1,0 +1,5 @@
+<mat-list>
+    <mat-list-item *ngFor="let planet of dividedOnTen[tenPlanetIndex-1] | filter:searchTerm;let i=index;">{{planet.name}} &nbsp;&nbsp;&nbsp;&nbsp;  <button (click)=details(planet) mat-button>more...</button>   </mat-list-item>
+    &nbsp;&nbsp; 
+    <mat-divider></mat-divider>
+</mat-list>
