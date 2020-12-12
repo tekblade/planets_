@@ -4,3 +4,4 @@
 # npm install
 # ng serve
 # type url: http://localhost:4200/
+# source https://swapi.co/api/planets/?page=1 doesnt exist - content will not be loaded
